@@ -34,7 +34,7 @@ public class NameValidator implements SignUpValidator {
     }
 
     @Override
-    public boolean isCompany(boolean isCompany) {
-        return isCompany;
+    public boolean isSatisfiedBy(boolean isCompany) {
+        return !isCompany;
     }
 }

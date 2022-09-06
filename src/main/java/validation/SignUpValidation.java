@@ -22,7 +22,7 @@ public class SignUpValidation {
         }
 
         return validators.stream()
-            .filter(validator -> validator.isCompany(request.isCompany()))
+            .filter(validator -> validator.isSatisfiedBy(request.isCompany()))
             .map(validator -> validator.validate(request))
             .flatMap(Collection::stream)
             .collect(Collectors.toList());

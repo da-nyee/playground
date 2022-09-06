@@ -8,5 +8,5 @@ public interface SignUpValidator {
 
     List<InvalidResponse> validate(ValidationRequest request);
 
-    boolean isCompany(boolean isCompany);
+    boolean isSatisfiedBy(boolean isCompany);
 }
